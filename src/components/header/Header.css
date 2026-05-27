@@ -1,0 +1,76 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(244, 239, 230, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(27, 58, 45, 0.1);
+  box-shadow: var(--shadow-sm);
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.navbar-logo {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  color: var(--forest);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.navbar-logo-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--forest);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.navbar-logo-icon svg {
+  fill: var(--green);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: var(--mid);
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--forest);
+  background: rgba(27, 58, 45, 0.07);
+}
+
+.nav-cta {
+  margin-left: 8px;
+}
+
+/* =========================================
+   PAGE OFFSET (for fixed navbar)
+========================================= */
+.page-top {
+  height: 72px;
+}
