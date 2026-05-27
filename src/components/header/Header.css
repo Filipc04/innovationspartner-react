@@ -74,3 +74,21 @@
 .page-top {
   height: 72px;
 }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #1e1e1e;
+  border-radius: 2px;
+  transition: all 0.28s ease;
+}
