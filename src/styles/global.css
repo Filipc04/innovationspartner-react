@@ -72,6 +72,7 @@
   background: transparent;
   color: var(--forest);
   border: 2px solid var(--forest);
+  margin-top: 32px;
 }
 
 .btn--outline:hover {

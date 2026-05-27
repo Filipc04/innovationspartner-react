@@ -14,7 +14,7 @@ export const Header = () => {
           Innovationspartner
         </a>
         <ul className="nav-links" role="list">
-          <a href="/"      className="nav-link active">Hem</a>
+          <a href="/"          className="nav-link active">Hem</a>
           <a href="services"   className="nav-link">Tjänster</a>
           <a href="packages"   className="nav-link">Paket</a>
           <a href="about"      className="nav-link">Om oss</a>

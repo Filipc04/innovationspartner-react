@@ -25,8 +25,8 @@ export const HomePage = () => {
                 </h1>
                 <p className="hero-sub">Vi hjälper er att finansiera, driva och skala upp hållbara innovationsprojekt - från idé till etablerat bolag.</p>
                 <div className="hero-actions">
-                  <a href="contact.html" className="btn btn--primary">Boka kostnadsfri konsultation</a>
-                  <a href="packages.html" className="btn btn--white">Se våra paket →</a>
+                  <a href="contact" className="btn btn--primary">Boka kostnadsfri konsultation</a>
+                  <a href="packages" className="btn btn--white">Se våra paket →</a>
                 </div>
 
                 <div className="hero-stats" id="hero-stats" aria-label="Nyckeltal">
@@ -130,7 +130,7 @@ export const HomePage = () => {
                   <li>Mentor för nystartade bolag</li>
                   <li>Master of Economics, Lunds Universitet (1984)</li>
                 </ul>
-                <a href="about.html" className="btn btn--outline">Läs mer om oss</a>
+                <a href="about" className="btn btn--outline">Läs mer om oss</a>
               </div>
             </div>
           </div>
@@ -140,7 +140,7 @@ export const HomePage = () => {
           <div className="container">
             <h2 id="cta-heading">Har ni ett projekt i åtanke?</h2>
             <p>Inledande konsultation är kostnadsfri. Vi berättar om möjliga finansieringsvägar för just ert projekt.</p>
-            <a href="contact.html" className="btn btn--white">Kontakta oss idag</a>
+            <a href="contact" className="btn btn--white">Kontakta oss idag</a>
           </div>
         </section>
 
