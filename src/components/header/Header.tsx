@@ -1,4 +1,5 @@
 import './Header.css'
+import { TfiWorld } from 'react-icons/tfi'
 
 export const Header = () => {
   
@@ -8,7 +9,7 @@ export const Header = () => {
       <nav className="navbar-inner" role="navigation" aria-label="Huvudnavigation">
         <a href="/" className="navbar-logo" aria-label="Innovationspartner startsida">
           <div className="navbar-logo-icon" aria-hidden="true">
-            <svg width="18" height="18" viewBox="0 0 18 18"><path d="M9 2l2.5 5h5.5l-4.5 3.5 1.7 5.5L9 13l-5.2 3 1.7-5.5L1 7h5.5z"/></svg>
+            <TfiWorld />
           </div>
           Innovationspartner
         </a>
