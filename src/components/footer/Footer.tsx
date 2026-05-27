@@ -17,12 +17,12 @@ export const Footer = () => {
         <nav aria-label="Sidfotslänkar">
           <div className="footer-col-title">Navigation</div>
           <ul className="footer-links">
-            <li><a href="index"      className="footer-link">Hem</a></li>
-            <li><a href="services"   className="footer-link">Tjänster</a></li>
-            <li><a href="packages"   className="footer-link">Konsultationspaket</a></li>
-            <li><a href="about"      className="footer-link">Om oss</a></li>
-            <li><a href="contribute" className="footer-link">Bidra till projekt</a></li>
-            <li><a href="contact"    className="footer-link">Kontakt</a></li>
+            <a href="/"      className="footer-link">Hem</a>
+            <a href="services"   className="footer-link">Tjänster</a>
+            <a href="packages"   className="footer-link">Konsultationspaket</a>
+            <a href="about"      className="footer-link">Om oss</a>
+            <a href="contribute" className="footer-link">Bidra till projekt</a>
+            <a href="contact"    className="footer-link">Kontakt</a>
           </ul>
         </nav>
         <div>
