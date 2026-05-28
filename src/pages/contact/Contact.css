@@ -172,3 +172,6 @@ textarea.form-input {
 .contact-map-link {
   font-size: 0.8rem;
 }
+.thank-msg{
+  color: var(--green);
+}
