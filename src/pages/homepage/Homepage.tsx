@@ -7,6 +7,7 @@ import { VscGraph, VscGraphLine } from "react-icons/vsc";
 import { TbPigMoney } from "react-icons/tb";
 import { useEffect, useState } from "react";
 import { numIncrease } from "../../components/numincreaser/numincreaser";
+import { RandomCard } from "../../components/randomcard/RandomCard";
 
 export const HomePage = () => {
   const [projects, setProjects] = useState(0); 
@@ -54,7 +55,7 @@ export const HomePage = () => {
                   </div>
                 </div>
 
-                <div id="spotlight" aria-live="polite" aria-label="Slumpmässigt projekthöjdpunkt"></div>
+                <RandomCard />
               </div>
 
               <div className="hero-visual" aria-hidden="true">
