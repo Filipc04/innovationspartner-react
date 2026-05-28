@@ -19,7 +19,6 @@ export const Header = () => {
           <a href="packages"   className="nav-link">Paket</a>
           <a href="about"      className="nav-link">Om oss</a>
           <a href="contribute" className="nav-link">Bidra</a>
-          <a href="extra"      className="nav-link">Extra</a>
           <a href="contact"    className="btn btn--primary nav-cta">Kontakta oss</a>
         </ul>
         <button
