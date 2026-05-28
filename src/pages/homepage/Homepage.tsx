@@ -5,8 +5,18 @@ import { IoRocketOutline } from "react-icons/io5";
 import { FaRegHandshake } from "react-icons/fa";
 import { VscGraph, VscGraphLine } from "react-icons/vsc";
 import { TbPigMoney } from "react-icons/tb";
+import { useEffect, useState } from "react";
+import { numIncrease } from "../../components/numincreaser/numincreaser";
 
 export const HomePage = () => {
+  const [projects, setProjects] = useState(0); 
+  const [year, setYear] = useState(0);
+
+  useEffect(() => {
+    numIncrease(40, setProjects, 1400);
+    numIncrease(2019, setYear, 1100);
+  }, []);
+
   return (
     <>
       <Header />
@@ -31,15 +41,15 @@ export const HomePage = () => {
 
                 <div className="hero-stats" id="hero-stats" aria-label="Nyckeltal">
                   <div>
-                    <div className="stat-num" id="stat-projects">40+</div>
+                    <div className="stat-num" id="stat-projects">{projects}+</div>
                     <div className="stat-label">Projekt genomförda</div>
                   </div>
                   <div>
-                    <div className="stat-num" id="stat-revenue">1,8M kr</div>
+                    <div className="stat-num stat-num--fade" id="stat-revenue">1,8M kr</div>
                     <div className="stat-label">Senaste Vinnova-anslag</div>
                   </div>
                   <div>
-                    <div className="stat-num" id="stat-year">2019</div>
+                    <div className="stat-num" id="stat-year">{year}</div>
                     <div className="stat-label">Grundat</div>
                   </div>
                 </div>

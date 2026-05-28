@@ -68,6 +68,21 @@
   color: var(--white);
 }
 
+.stat-num--fade {
+  animation: fadeIn 3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    
+  }
+  to {
+    opacity: 1;
+    
+  }
+}
+
 .stat-label {
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.6);
@@ -151,7 +166,7 @@
 }
 
 /* =========================================
-   SERVICES STRIP (HOME)
+  SERVICES STRIP (HOME)
 ========================================= */
 .services-strip {
   background: var(--white);
@@ -221,7 +236,7 @@
 }
 
 /* =========================================
-   ABOUT TEASER (HOME)
+  ABOUT TEASER (HOME)
 ========================================= */
 .about-grid {
   display: grid;
@@ -317,7 +332,7 @@
 }
 
 /* =========================================
-   CTA BANNER (HOME)
+  CTA BANNER (HOME)
 ========================================= */
 .cta-banner {
   background: var(--green);
@@ -339,4 +354,59 @@
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* =========================================
+  RESPONSIVE - TABLET (≤ 900px)
+========================================= */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    display: none;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    border-right: none;
+    border-bottom: 1px solid var(--cream-dk);
+  }
+
+  .service-card:last-child {
+    border-bottom: none;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+ 
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* =========================================
+  RESPONSIVE - MOBILE (≤ 600px)
+========================================= */
+@media (max-width: 600px) {
+  .hero {
+    padding: 120px 0 80px;
+  }
+
+  .hero-stats {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
 }
