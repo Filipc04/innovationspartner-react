@@ -1,5 +1,8 @@
 import './Contact.css'
 import { Footer, Header } from '../../components'
+import { MdPhone } from "react-icons/md";
+import { AiOutlineMail } from "react-icons/ai";
+import { FaMapMarkedAlt, FaMapPin } from "react-icons/fa";
 
 export const Contact = () => {
   return (
@@ -150,7 +153,7 @@ export const Contact = () => {
                 <div className="contact-items">
                   <div className="contact-item">
                     <div className="contact-icon" aria-hidden="true">
-                      📞
+                      <MdPhone />
                     </div>
 
                     <div>
@@ -164,7 +167,7 @@ export const Contact = () => {
 
                   <div className="contact-item">
                     <div className="contact-icon" aria-hidden="true">
-                      ✉️
+                      <AiOutlineMail/>
                     </div>
 
                     <div>
@@ -180,7 +183,7 @@ export const Contact = () => {
 
                   <div className="contact-item">
                     <div className="contact-icon" aria-hidden="true">
-                      📍
+                      <FaMapPin/>
                     </div>
 
                     <div>
@@ -201,7 +204,7 @@ export const Contact = () => {
                   aria-label="Kartvy - Uttervägen 8, Löddeköpinge"
                 >
                   <div className="contact-map-icon" aria-hidden="true">
-                    🗺️
+                    <FaMapMarkedAlt />
                   </div>
 
                   <div className="contact-map-label">

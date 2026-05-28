@@ -3,3 +3,6 @@ export { Header } from './header/Header';
 export { Accordion, AccordionItem } from './accordion/Accordion';
 export { Hamburger } from './hamburger/Hamburger';
 export { ScrollButton } from './scrollbutton/ScrollButton';
+export { InfoCard } from './info-card/InfoCard';
+export { TimeLine } from './timeline/TimeLine';
+export { EduCard } from './edu-card/EduCard';

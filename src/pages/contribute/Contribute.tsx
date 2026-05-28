@@ -1,5 +1,10 @@
-import { Footer, Header } from "../../components"
+import { Footer, Header, InfoCard } from "../../components"
+
 import './Contribute.css'
+import { PiLightningFill, PiCityLight, PiStudentBold } from "react-icons/pi";
+import { FaBus } from "react-icons/fa";
+import { GiTreeBranch } from "react-icons/gi";
+import { CiPill } from "react-icons/ci";
 
 export const Contribute = () => {
   return (
@@ -24,43 +29,41 @@ export const Contribute = () => {
             </div>
 
             <div className="areas-grid" role="list">
+              <InfoCard
+                icon={<PiCityLight />}
+                title="Hållbar stadsutveckling"
+                description="Smarta städer, grön infrastruktur och hållbara transportsystem för framtidens urbana miljöer."
+              />
 
-              <article className="area-card" role="listitem">
-                <div className="area-icon" aria-hidden="true">🏙️</div>
-                <h3 className="area-title">Hållbar stadsutveckling</h3>
-                <p className="area-desc">Smarta städer, grön infrastruktur och hållbara transportsystem för framtidens urbana miljöer.</p>
-              </article>
+              <InfoCard
+                icon={<PiLightningFill />}
+                title="Energi & bränsle"
+                description="Förnybar energi, energieffektivisering och alternativa bränslen för en fossilfri framtid."
+              />
 
-              <article className="area-card" role="listitem">
-                <div className="area-icon" aria-hidden="true">⚡</div>
-                <h3 className="area-title">Energi &amp; bränsle</h3>
-                <p className="area-desc">Förnybar energi, energieffektivisering och alternativa bränslen för en fossilfri framtid.</p>
-              </article>
+              <InfoCard
+                icon={<FaBus />}
+                title="Mobilitetslösningar"
+                description="Hållbara transporter, elektrifiering och ny mobilitetsteknik för människor och gods."
+              />
 
-              <article className="area-card" role="listitem">
-                <div className="area-icon" aria-hidden="true">🚌</div>
-                <h3 className="area-title">Mobilitetslösningar</h3>
-                <p className="area-desc">Hållbara transporter, elektrifiering och ny mobilitetsteknik för människor och gods.</p>
-              </article>
+              <InfoCard
+                icon={<GiTreeBranch />}
+                title="Natur & miljö"
+                description="Biologisk mångfald, skogsbruk och ekosystemtjänster som bidrar till planetens välmående."
+              />
 
-              <article className="area-card" role="listitem">
-                <div className="area-icon" aria-hidden="true">🌿</div>
-                <h3 className="area-title">Natur &amp; miljö</h3>
-                <p className="area-desc">Biologisk mångfald, skogsbruk och ekosystemtjänster som bidrar till planetens välmående.</p>
-              </article>
+              <InfoCard
+                icon={<CiPill />}
+                title="Medicin & hälsa"
+                description="Innovativa lösningar inom diagnostik, behandling och förebyggande hälsovård."
+              />
 
-              <article className="area-card" role="listitem">
-                <div className="area-icon" aria-hidden="true">💊</div>
-                <h3 className="area-title">Medicin &amp; hälsa</h3>
-                <p className="area-desc">Innovativa lösningar inom diagnostik, behandling och förebyggande hälsovård.</p>
-              </article>
-
-              <article className="area-card" role="listitem">
-                <div className="area-icon" aria-hidden="true">📚</div>
-                <h3 className="area-title">Utbildning &amp; beteende</h3>
-                <p className="area-desc">Pedagogiska innovationer och beteendeförändringar som driver hållbar omställning.</p>
-              </article>
-
+              <InfoCard
+                icon={<PiStudentBold />}
+                title="Utbildning & beteende"
+                description="Pedagogiska innovationer och beteendeförändringar som driver hållbar omställning."
+              />
             </div>
 
             <div className="contribute-cta">

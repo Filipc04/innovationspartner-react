@@ -1,0 +1,19 @@
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.services-header {
+  max-width: 640px;
+  margin-bottom: 64px;
+}
+
+.services-cta {
+  margin-top: 48px;
+}
+
+.services-cta p {
+  color: var(--mid);
+  margin-bottom: 20px;
+}

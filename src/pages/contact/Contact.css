@@ -101,6 +101,7 @@ textarea.form-input {
   font-size: 1.2rem;
   flex-shrink: 0;
   box-shadow: var(--shadow-sm);
+  color: var(--green);
 }
 
 .contact-item-title {
@@ -165,6 +166,7 @@ textarea.form-input {
 
 .contact-map-icon {
   font-size: 2rem;
+  color: var(--green);
 }
 
 .contact-map-link {

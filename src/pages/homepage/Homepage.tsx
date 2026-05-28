@@ -1,4 +1,4 @@
-import { Footer, Header } from "../../components"
+import { Footer, Header, ScrollButton } from "../../components"
 import './Homepage.css'
 import { RiPlantLine, RiLightbulbFlashLine } from "react-icons/ri";
 import { IoRocketOutline } from "react-icons/io5";
@@ -145,6 +145,7 @@ export const HomePage = () => {
         </section>
 
       </main>
+      <ScrollButton />
       <Footer />
     </>
   )
