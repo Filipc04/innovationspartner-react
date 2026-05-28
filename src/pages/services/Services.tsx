@@ -26,7 +26,7 @@ export const Services = () => {
 
             <div className="services-cta">
               <p>Hör av er för att diskutera hur vi kan anpassa stödet för just ert projekt.</p>
-              <a href="contact.html" className="btn btn--primary">Kontakta oss</a>
+              <a href="contact" className="btn btn--primary">Kontakta oss</a>
             </div>
           </div>
         </section>

@@ -19,6 +19,7 @@ export const Header = () => {
             <NavLink to="/packages"  className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}>Paket</NavLink>
             <NavLink to="/about"     className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}>Om oss</NavLink>
             <NavLink to="/contribute"className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}>Bidra</NavLink>
+            <NavLink to="/calculate"className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}>Räkna</NavLink>
             <NavLink to="/contact"   className="btn btn--primary nav-cta">Kontakta oss</NavLink>
           </ul>
           <button

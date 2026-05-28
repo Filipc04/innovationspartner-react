@@ -1,0 +1,17 @@
+.calculate-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.questionnare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+  width: fit-content;
+  background-color: var(--white);
+  border-radius: 20px;
+}

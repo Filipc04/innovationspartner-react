@@ -33,9 +33,9 @@
 }
 
 .accordion-content {
-  padding: 0 28px 22px;
+  padding: 22px 28px 22px;
   border-top: 1px solid var(--cream-dk);
-  animation: slideDown 0.3s ease forwards;
+  animation: slideDown 1s ease forwards;
   overflow: hidden;
   font-size: 0.95rem;
   color: var(--mid);
