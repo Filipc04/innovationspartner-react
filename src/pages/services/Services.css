@@ -1,3 +1,6 @@
+/* =========================================
+   SERVICES PAGE
+========================================= */
 .services-list {
   display: flex;
   flex-direction: column;
@@ -16,4 +19,27 @@
 .services-cta p {
   color: var(--mid);
   margin-bottom: 20px;
+}
+
+/* =========================================
+   RESPONSIVE – TABLET (≤ 900px)
+========================================= */
+@media (max-width: 900px) {
+  .services-header {
+    max-width: 100%;
+    margin-bottom: 48px;
+  }
+}
+
+/* =========================================
+   RESPONSIVE – MOBILE (≤ 600px)
+========================================= */
+@media (max-width: 600px) {
+  .services-header {
+    margin-bottom: 32px;
+  }
+
+  .services-cta {
+    margin-top: 32px;
+  }
 }

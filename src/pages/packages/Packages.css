@@ -94,6 +94,8 @@
   gap: 10px;
   flex: 1;
   margin-bottom: 32px;
+  padding: 0;
+  list-style: none;
 }
 
 .pkg-feature {
@@ -124,6 +126,7 @@
 .pkg-btn-full {
   width: 100%;
   justify-content: center;
+  text-align: center;
 }
 
 .packages-footer {
@@ -152,4 +155,57 @@
 .packages-footer .btn {
   margin-left: auto;
   white-space: nowrap;
+}
+
+/* =========================================
+   RESPONSIVE – TABLET (≤ 900px)
+========================================= */
+@media (max-width: 900px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  /* Featured card sits in normal flow but gets extra top margin
+     so the absolute .pkg-badge isn't clipped */
+  .pkg-card.featured {
+    margin-top: 16px;
+  }
+
+  .packages-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .packages-footer .btn {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .packages-header {
+    margin-bottom: 48px;
+  }
+}
+
+/* =========================================
+   RESPONSIVE – MOBILE (≤ 600px)
+========================================= */
+@media (max-width: 600px) {
+  .packages-grid {
+    max-width: 100%;
+  }
+
+  .pkg-card {
+    padding: 32px 24px;
+  }
+
+  .packages-footer {
+    padding: 24px 20px;
+  }
+
+  .packages-header {
+    margin-bottom: 32px;
+  }
 }

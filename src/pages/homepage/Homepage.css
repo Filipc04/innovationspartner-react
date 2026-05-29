@@ -1,3 +1,6 @@
+/* =========================================
+   HERO
+========================================= */
 .hero {
   padding: 160px 0 100px;
   background: linear-gradient(135deg, var(--forest) 0%, var(--forest-mid) 60%, #3a7a58 100%);
@@ -18,15 +21,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 64px;
   align-items: center;
-}
-
-.hero-label {
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--green);
-  margin-bottom: 20px;
 }
 
 .hero-title {
@@ -60,6 +54,7 @@
   display: flex;
   gap: 40px;
   margin-top: 60px;
+  flex-wrap: wrap;
 }
 
 .stat-num {
@@ -73,14 +68,8 @@
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    
-  }
-  to {
-    opacity: 1;
-    
-  }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .stat-label {
@@ -98,6 +87,33 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 99px;
+  padding: 8px 16px;
+  width: fit-content;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 20px;
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--green);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
 }
 
 .card-chip {
@@ -139,34 +155,8 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-.badge {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 99px;
-  padding: 8px 16px;
-  width: fit-content;
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.badge-dot {
-  width: 8px;
-  height: 8px;
-  background: var(--green);
-  border-radius: 50%;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0.4; }
-}
-
 /* =========================================
-  SERVICES STRIP (HOME)
+   SERVICES STRIP (HOME)
 ========================================= */
 .services-strip {
   background: var(--white);
@@ -236,7 +226,7 @@
 }
 
 /* =========================================
-  ABOUT TEASER (HOME)
+   ABOUT TEASER (HOME)
 ========================================= */
 .about-grid {
   display: grid;
@@ -313,6 +303,8 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  padding: 0;
+  list-style: none;
 }
 
 .about-list li {
@@ -332,7 +324,7 @@
 }
 
 /* =========================================
-  CTA BANNER (HOME)
+   CTA BANNER (HOME)
 ========================================= */
 .cta-banner {
   background: var(--green);
@@ -357,11 +349,12 @@
 }
 
 /* =========================================
-  RESPONSIVE - TABLET (≤ 900px)
+   RESPONSIVE – TABLET (≤ 900px)
 ========================================= */
 @media (max-width: 900px) {
   .hero-grid {
     grid-template-columns: 1fr;
+    gap: 48px;
   }
 
   .hero-visual {
@@ -383,30 +376,64 @@
 
   .about-grid {
     grid-template-columns: 1fr;
+    gap: 48px;
   }
- 
-  .footer-top {
-    grid-template-columns: 1fr;
-    gap: 32px;
+
+  /* Hide the portrait on tablet – saves space */
+  .about-img-wrap {
+    display: none;
+  }
+
+  .cta-banner {
+    padding: 60px 0;
   }
 }
 
 /* =========================================
-  RESPONSIVE - MOBILE (≤ 600px)
+   RESPONSIVE – MOBILE (≤ 600px)
 ========================================= */
 @media (max-width: 600px) {
   .hero {
-    padding: 120px 0 80px;
+    padding: 120px 0 72px;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 2.4rem);
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+    margin-bottom: 28px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions a {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
   }
 
   .hero-stats {
     gap: 24px;
-    flex-wrap: wrap;
+    margin-top: 40px;
   }
 
-  .footer-bottom {
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
+  .stat-num {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    padding: 28px 20px;
+  }
+
+  .cta-banner {
+    padding: 48px 0;
+  }
+
+  .cta-banner h2 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
   }
 }

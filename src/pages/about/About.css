@@ -20,6 +20,7 @@
   font-size: 1.3rem;
   color: var(--forest);
   margin-bottom: 20px;
+  margin-top: 32px;
 }
 
 .edu-grid {
@@ -52,10 +53,45 @@
   background: var(--white);
   border-radius: 99px;
   padding: 6px 12px;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .skills-tag-icon {
   color: var(--green);
-  text-align: center
+  display: flex;
+  align-items: center;
+}
+
+/* =========================================
+   RESPONSIVE – TABLET (≤ 900px)
+========================================= */
+@media (max-width: 900px) {
+  .about-page-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-page-subtitle:first-of-type {
+    margin-top: 0;
+  }
+}
+
+/* =========================================
+   RESPONSIVE – MOBILE (≤ 600px)
+========================================= */
+@media (max-width: 600px) {
+  .about-page-grid {
+    gap: 32px;
+  }
+
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-box {
+    padding: 16px;
+  }
 }

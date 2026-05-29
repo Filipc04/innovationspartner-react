@@ -1,8 +1,12 @@
-.calculate-content{
+/* =========================================
+   CALCULATE PAGE
+========================================= */
+.calculate-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 24px;
 }
 
 .questionnare {
@@ -14,25 +18,69 @@
   background-color: var(--white);
   border-radius: 20px;
   width: 50%;
-  margin: 96px;
+  margin: 96px auto;
   color: var(--forest);
   border-top: 4px solid var(--green);
 }
 
-.result-box-good, .result-box-bad{
+.questionnare h2 {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--forest);
+}
+
+.result-box-good,
+.result-box-bad {
   text-align: center;
   padding: 20px;
   border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
 }
 
-.result-box-good{
+.result-box-good {
   background-color: rgba(46, 184, 122, 0.45);
   border: 2px solid var(--green);
   color: #1f6f4a;
 }
 
-.result-box-bad{
+.result-box-bad {
   background-color: rgba(184, 92, 92, 0.45);
   border: 2px solid #b85c5c;
   color: #6f2f2f;
+  
+}
+
+/* =========================================
+   RESPONSIVE – TABLET (≤ 900px)
+========================================= */
+@media (max-width: 900px) {
+  .questionnare {
+    width: 75%;
+    padding: 40px 32px;
+    margin: 64px auto;
+  }
+}
+
+/* =========================================
+   RESPONSIVE – MOBILE (≤ 600px)
+========================================= */
+@media (max-width: 600px) {
+  .calculate-content {
+    padding: 0 16px;
+  }
+
+  .questionnare {
+    width: 100%;
+    padding: 28px 20px;
+    margin: 40px auto;
+    gap: 28px;
+  }
+
+  .questionnare h2 {
+    font-size: 1.1rem;
+  }
 }
