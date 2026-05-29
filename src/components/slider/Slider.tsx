@@ -2,17 +2,26 @@ import { useEffect, useRef, useState } from "react"
 import "./Slider.css"
 
 interface SliderProps {
-  valueType: string;
+  valueType: string
   from: number
   to: number
+  value: number
+  setValue: React.Dispatch<React.SetStateAction<number>>
 }
 
-export const Slider = ({ valueType, from, to }: SliderProps) => {
+export const Slider = ({
+  valueType,
+  from,
+  to,
+  value,
+  setValue
+}: SliderProps) => {
+
   const trackRef = useRef<HTMLDivElement | null>(null)
 
-  const [percent, setPercent] = useState(50)
-
   const [dragging, setDragging] = useState(false)
+
+  const percent = ((value - from) / (to - from)) * 100
 
   const updateValue = (clientX: number) => {
     if (!trackRef.current) return
@@ -25,7 +34,11 @@ export const Slider = ({ valueType, from, to }: SliderProps) => {
 
     const newPercent = (x / rect.width) * 100
 
-    setPercent(newPercent)
+    const newValue = Math.round(
+      from + (newPercent / 100) * (to - from)
+    )
+
+    setValue(newValue)
   }
 
   const onMouseDown = (e: React.MouseEvent) => {
@@ -54,19 +67,11 @@ export const Slider = ({ valueType, from, to }: SliderProps) => {
     }
   }, [dragging])
 
-  useEffect(() => {
-    document.body.style.userSelect = dragging ? "none" : ""
-
-    return () => {
-      document.body.style.userSelect = ""
-    }
-  }, [dragging])
-  
-  const value = Math.round(from + (percent / 100) * (to - from))
-
   return (
     <div className="slider">
-      <h2 className="slider-value">{valueType}: {value}</h2>
+      <h2 className="slider-value">
+        {valueType}: {value}
+      </h2>
 
       <div
         ref={trackRef}
@@ -79,11 +84,5 @@ export const Slider = ({ valueType, from, to }: SliderProps) => {
         />
       </div>
     </div>
-  )
-}
-
-export const SliderCalculateButton = () => {
-  return (
-    <button className="btn btn--primary">Räkna!</button>
   )
 }

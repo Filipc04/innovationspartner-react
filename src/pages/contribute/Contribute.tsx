@@ -1,4 +1,4 @@
-import { Footer, Header, InfoCard } from "../../components"
+import { Footer, Header, HeadingSection, InfoCard } from "../../components"
 
 import './Contribute.css'
 import { PiLightningFill, PiCityLight, PiStudentBold } from "react-icons/pi";
@@ -12,13 +12,7 @@ export const Contribute = () => {
       <Header />
       <main role="main">
 
-        <section className="contribute-hero" aria-labelledby="contribute-heading">
-          <div className="container">
-            <span className="tag">Bidra till projekt</span>
-            <h1 id="contribute-heading" className="section-title">Bli en del av lösningen</h1>
-            <p className="section-sub">Är ni intresserade av att stötta och bidra till hållbarhetsprojekt? Vi sammanför er med projektägare och hittar intressanta lösningar för att fler projekt ska se dagens ljus.</p>
-          </div>
-        </section>
+        <HeadingSection tag="Bidra till projekt" heading="Bli en del av lösningen" subtext="Är ni intresserade av att stötta och bidra till hållbarhetsprojekt? Vi sammanför er med projektägare och hittar intressanta lösningar för att fler projekt ska se dagens ljus."/>
 
         <section className="section" aria-labelledby="areas-heading">
           <div className="container">

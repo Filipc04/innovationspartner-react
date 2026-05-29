@@ -1,0 +1,15 @@
+.contribute-hero {
+  background: linear-gradient(135deg, var(--forest) 0%, var(--forest-mid) 100%);
+  padding: 120px 0 80px;
+  text-align: center;
+}
+
+.contribute-hero .section-title {
+  color: var(--white);
+  margin-top: 12px;
+}
+
+.contribute-hero .section-sub {
+  color: rgba(255, 255, 255, 0.75);
+  margin: 16px auto 0;
+}
