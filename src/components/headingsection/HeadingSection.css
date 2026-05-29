@@ -13,3 +13,9 @@
   color: rgba(255, 255, 255, 0.75);
   margin: 16px auto 0;
 }
+
+.contribute-hero .section-note {
+  color: rgba(90, 218, 147, 0.75);
+  margin: 16px auto 0;
+  font-size: 12px;
+}

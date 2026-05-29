@@ -14,6 +14,8 @@ export const Calculate = () => {
   const [innovation, setInnovation] = useState(5)
   const [sustainability, setSustainability] = useState(5)
   const [revenue, setRevenue] = useState(500000)
+  const [isGoodResult, setIsGoodResult] = useState(false);
+
 
   const [message, setMessage] = useState("")
 
@@ -29,12 +31,14 @@ export const Calculate = () => {
 
     if(goodCount >= 3){
       setMessage(
-        "Ditt företag har goda möjligheter för en stor summa bidrag! Estimation: 2.5 miljoner kr."
+        "Ditt företag har goda möjligheter för ett stort bidrag! Estimation: 2,5 miljoner kr."
       )
+      setIsGoodResult(true);
     } else {
       setMessage(
         "Ditt företag har tyvärr ganska dåliga möjligheter för bidrag. Estimation: högst 250 tusen kr."
       )
+      setIsGoodResult(false);
     }
   }
 
@@ -45,7 +49,8 @@ export const Calculate = () => {
       <HeadingSection
         tag="Räkna ut bidrags-potential"
         heading="Vill du veta hur mycket du kan få i bidrag?"
-        subtext="Räkna ut det med vår alldeles egna bidragsräknare! (OBS! Detta är bara för uppgiftens skull, inte en riktig miniräknare som ger meningsfulla värden)."
+        subtext="Räkna ut det med vår alldeles egna bidragskalkylator!"
+        note="Detta är bara för uppgiftens skull, inte en riktig räknare som ger meningsfulla värden!"
       />
 
       <div className="calculate-content">
@@ -104,7 +109,7 @@ export const Calculate = () => {
           </button>
 
           {message && (
-            <div className="result-box">
+            <div className={isGoodResult ? 'result-box-good' : 'result-box-bad'}>
               <h2>{message}</h2>
             </div>
           )}

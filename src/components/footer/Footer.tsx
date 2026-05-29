@@ -23,6 +23,7 @@ export const Footer = () => {
             <a href="about"      className="footer-link">Om oss</a>
             <a href="contribute" className="footer-link">Bidra till projekt</a>
             <a href="contact"    className="footer-link">Kontakt</a>
+            <a href="calculate"    className="footer-link">Kalkylatorn</a>
           </ul>
         </nav>
         <div>
@@ -32,9 +33,9 @@ export const Footer = () => {
             <p>
               <a href="mailto:tf@innovationspartner.se" className="footer-link">tf@innovationspartner.se</a>
             </p>
-            <p className="footer-link">
+            <a href='https://maps.google.com/?q=Utterv%C3%A4gen+8,+246+52+L%C3%B6ddek%C3%B6pinge' className="footer-link" target='_blank'>
               Uttervägen 8 246 52 Löddeköpinge
-            </p>
+            </a>
           </address>
         </div>
       </div>

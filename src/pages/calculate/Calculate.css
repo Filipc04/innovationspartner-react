@@ -14,5 +14,25 @@
   background-color: var(--white);
   border-radius: 20px;
   width: 50%;
-  margin: 50px;
+  margin: 96px;
+  color: var(--forest);
+  border-top: 4px solid var(--green);
+}
+
+.result-box-good, .result-box-bad{
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.result-box-good{
+  background-color: rgba(46, 184, 122, 0.45);
+  border: 2px solid var(--green);
+  color: #1f6f4a;
+}
+
+.result-box-bad{
+  background-color: rgba(184, 92, 92, 0.45);
+  border: 2px solid #b85c5c;
+  color: #6f2f2f;
 }
