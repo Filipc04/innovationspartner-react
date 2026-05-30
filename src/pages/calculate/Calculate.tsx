@@ -3,6 +3,7 @@ import {
   Footer,
   Header,
   HeadingSection,
+  ScrollButton,
   Slider
 } from "../../components"
 
@@ -116,7 +117,7 @@ export const Calculate = () => {
 
         </div>
       </div>
-
+      <ScrollButton />
       <Footer />
     </>
   )

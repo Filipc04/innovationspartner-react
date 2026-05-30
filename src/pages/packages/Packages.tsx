@@ -1,4 +1,4 @@
-import { Footer, Header } from "../../components"
+import { Footer, Header, ScrollButton } from "../../components"
 import './Packages.css'
 
 export const Packages = () => {
@@ -74,6 +74,7 @@ export const Packages = () => {
           </div>
         </section>
       </main>
+      <ScrollButton />
       <Footer />
     </>
   )

@@ -181,7 +181,7 @@ textarea.form-input {
 }
 
 /* =========================================
-   RESPONSIVE – TABLET (≤ 900px)
+   RESPONSIVE TABLET (≤ 900px)
 ========================================= */
 @media (max-width: 900px) {
   .contact-grid {
@@ -200,7 +200,7 @@ textarea.form-input {
 }
 
 /* =========================================
-   RESPONSIVE – MOBILE (≤ 600px)
+   RESPONSIVE MOBILE (≤ 600px)
 ========================================= */
 @media (max-width: 600px) {
   .contact-form-box {

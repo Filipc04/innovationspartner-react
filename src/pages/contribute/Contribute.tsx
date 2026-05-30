@@ -1,4 +1,4 @@
-import { Footer, Header, HeadingSection, InfoCard } from "../../components"
+import { Footer, Header, HeadingSection, InfoCard, ScrollButton } from "../../components"
 
 import './Contribute.css'
 import { PiLightningFill, PiCityLight, PiStudentBold } from "react-icons/pi";
@@ -23,41 +23,12 @@ export const Contribute = () => {
             </div>
 
             <div className="areas-grid" role="list">
-              <InfoCard
-                icon={<PiCityLight />}
-                title="Hållbar stadsutveckling"
-                description="Smarta städer, grön infrastruktur och hållbara transportsystem för framtidens urbana miljöer."
-              />
-
-              <InfoCard
-                icon={<PiLightningFill />}
-                title="Energi & bränsle"
-                description="Förnybar energi, energieffektivisering och alternativa bränslen för en fossilfri framtid."
-              />
-
-              <InfoCard
-                icon={<FaBus />}
-                title="Mobilitetslösningar"
-                description="Hållbara transporter, elektrifiering och ny mobilitetsteknik för människor och gods."
-              />
-
-              <InfoCard
-                icon={<GiTreeBranch />}
-                title="Natur & miljö"
-                description="Biologisk mångfald, skogsbruk och ekosystemtjänster som bidrar till planetens välmående."
-              />
-
-              <InfoCard
-                icon={<CiPill />}
-                title="Medicin & hälsa"
-                description="Innovativa lösningar inom diagnostik, behandling och förebyggande hälsovård."
-              />
-
-              <InfoCard
-                icon={<PiStudentBold />}
-                title="Utbildning & beteende"
-                description="Pedagogiska innovationer och beteendeförändringar som driver hållbar omställning."
-              />
+              <InfoCard icon={<PiCityLight />} title="Hållbar stadsutveckling" description="Smarta städer, grön infrastruktur och hållbara transportsystem för framtidens urbana miljöer." />
+              <InfoCard icon={<PiLightningFill />} title="Energi & bränsle" description="Förnybar energi, energieffektivisering och alternativa bränslen för en fossilfri framtid." />
+              <InfoCard icon={<FaBus />} title="Mobilitetslösningar" description="Hållbara transporter, elektrifiering och ny mobilitetsteknik för människor och gods." />
+              <InfoCard icon={<GiTreeBranch />} title="Natur & miljö" description="Biologisk mångfald, skogsbruk och ekosystemtjänster som bidrar till planetens välmående." />
+              <InfoCard icon={<CiPill />} title="Medicin & hälsa" description="Innovativa lösningar inom diagnostik, behandling och förebyggande hälsovård." />
+              <InfoCard icon={<PiStudentBold />} title="Utbildning & beteende" description="Pedagogiska innovationer och beteendeförändringar som driver hållbar omställning." />
             </div>
 
             <div className="contribute-cta">
@@ -69,6 +40,7 @@ export const Contribute = () => {
         </section>
 
       </main>
+      <ScrollButton />
       <Footer />
     </>
   )

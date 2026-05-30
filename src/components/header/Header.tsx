@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router'
 import './Header.css'
 import { TfiWorld } from 'react-icons/tfi'
+import { Hamburger } from '../hamburger/Hamburger'
 
 export const Header = () => {
   return (
@@ -22,14 +23,8 @@ export const Header = () => {
             <NavLink to="/calculate"className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}>Kalkylatorn</NavLink>
             <NavLink to="/contact"   className="btn btn--primary nav-cta">Kontakta oss</NavLink>
           </ul>
-          <button
-            className="hamburger"
-            id="hamburgerBtn"
-            aria-label="Öppna meny"
-            aria-expanded="false"
-          >
-            <span></span><span></span><span></span>
-          </button>
+          
+          <Hamburger />
         </nav>
       </div>
     </header>

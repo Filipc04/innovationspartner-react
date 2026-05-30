@@ -349,7 +349,7 @@
 }
 
 /* =========================================
-   RESPONSIVE – TABLET (≤ 900px)
+   RESPONSIVE TABLET (≤ 900px)
 ========================================= */
 @media (max-width: 900px) {
   .hero-grid {
@@ -379,7 +379,6 @@
     gap: 48px;
   }
 
-  /* Hide the portrait on tablet – saves space */
   .about-img-wrap {
     display: none;
   }
@@ -390,7 +389,7 @@
 }
 
 /* =========================================
-   RESPONSIVE – MOBILE (≤ 600px)
+   RESPONSIVE MOBILE (≤ 600px)
 ========================================= */
 @media (max-width: 600px) {
   .hero {

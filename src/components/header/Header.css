@@ -1,4 +1,5 @@
 .navbar {
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -35,6 +36,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  color: var(--green);
 }
 
 .navbar-logo-icon svg {
@@ -45,6 +47,9 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link {
@@ -67,27 +72,24 @@
   margin-left: 8px;
 }
 
-/* =========================================
-   PAGE OFFSET (for fixed navbar)
-========================================= */
+
 .page-top {
   height: 72px;
 }
 
 .hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
-  border: none;
-  padding: 8px;
-  cursor: pointer;
+  display: none;        
 }
-.hamburger span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: #1e1e1e;
-  border-radius: 2px;
-  transition: all 0.28s ease;
+
+/* =========================================
+   RESPONSIVE hide nav, show hamburger
+========================================= */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;      
+  }
+
+  .hamburger {
+    display: flex;  
+  }
 }

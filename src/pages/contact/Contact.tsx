@@ -1,6 +1,6 @@
 import './Contact.css'
 import { useState } from 'react'
-import { Footer, Header } from '../../components'
+import { Footer, Header, ScrollButton } from '../../components'
 import { MdPhone } from "react-icons/md";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaMapMarkedAlt, FaMapPin } from "react-icons/fa";
@@ -158,7 +158,7 @@ export const Contact = () => {
           </div>
         </section>
       </main>
-
+      <ScrollButton />
       <Footer />
     </>
   );

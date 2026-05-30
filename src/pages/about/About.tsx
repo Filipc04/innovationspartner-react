@@ -1,5 +1,5 @@
 import { VscGraph } from "react-icons/vsc"
-import { EduCard, Footer, Header, TimeLine } from "../../components"
+import { EduCard, Footer, Header, ScrollButton, TimeLine } from "../../components"
 import './About.css'
 import { PiCityLight, PiLightningFill, PiStudentBold } from "react-icons/pi"
 import { CiPill } from "react-icons/ci"
@@ -58,6 +58,7 @@ export const About = () => {
           </div>
         </section>
       </main>
+      <ScrollButton />
       <Footer />
     </>
   )

@@ -4,6 +4,8 @@
 footer {
   background: var(--forest);
   color: rgba(255, 255, 255, 0.75);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-top {
@@ -24,6 +26,7 @@ footer {
   font-size: 0.9rem;
   line-height: 1.7;
   max-width: 300px;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .footer-col-title {
@@ -39,6 +42,9 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-link {
@@ -46,6 +52,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   transition: var(--transition);
   text-decoration: none;
+  display: inline-block;
 }
 
 .footer-link:hover {
@@ -64,4 +71,57 @@ footer {
 
 .ext-link {
   color: var(--green);
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin-top: 16px;
+  display: inline-block;
+}
+
+address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* =========================================
+   RESPONSIVE TABLET (≤ 900px)
+========================================= */
+@media (max-width: 900px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 48px 0;
+  }
+
+  /* Brand description spans both columns */
+  .footer-top > div:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+/* =========================================
+   RESPONSIVE MOBILE (≤ 600px)
+========================================= */
+@media (max-width: 600px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 40px 0;
+  }
+
+  .footer-top > div:first-child {
+    grid-column: auto;
+  }
+
+  .footer-desc {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    padding: 20px 0;
+  }
 }

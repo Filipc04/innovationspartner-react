@@ -22,7 +22,7 @@
 }
 
 /* =========================================
-   RESPONSIVE – TABLET (≤ 900px)
+   RESPONSIVE TABLET (≤ 900px)
 ========================================= */
 @media (max-width: 900px) {
   .services-header {
@@ -32,7 +32,7 @@
 }
 
 /* =========================================
-   RESPONSIVE – MOBILE (≤ 600px)
+   RESPONSIVE MOBILE (≤ 600px)
 ========================================= */
 @media (max-width: 600px) {
   .services-header {

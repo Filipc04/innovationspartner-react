@@ -158,7 +158,7 @@
 }
 
 /* =========================================
-   RESPONSIVE – TABLET (≤ 900px)
+   RESPONSIVE TABLET (≤ 900px)
 ========================================= */
 @media (max-width: 900px) {
   .packages-grid {
@@ -167,8 +167,6 @@
     margin: 0 auto;
   }
 
-  /* Featured card sits in normal flow but gets extra top margin
-     so the absolute .pkg-badge isn't clipped */
   .pkg-card.featured {
     margin-top: 16px;
   }
@@ -190,7 +188,7 @@
 }
 
 /* =========================================
-   RESPONSIVE – MOBILE (≤ 600px)
+   RESPONSIVE MOBILE (≤ 600px)
 ========================================= */
 @media (max-width: 600px) {
   .packages-grid {
