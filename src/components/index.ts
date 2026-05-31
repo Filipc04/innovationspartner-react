@@ -8,3 +8,4 @@ export { TimeLine } from './timeline/TimeLine';
 export { EduCard } from './edu-card/EduCard';
 export { Slider } from './slider/Slider';
 export { HeadingSection } from './headingsection/HeadingSection';
+export { ScrollToTop } from './scrolltotop/ScrollToTop';

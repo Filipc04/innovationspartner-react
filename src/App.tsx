@@ -2,12 +2,14 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 import './styles/App.css'
 import './styles/global.css'
 import { About, Calculate, Contact, Contribute, HomePage, Packages, Services } from './pages'
+import { ScrollToTop } from './components'
 
 
 function App() {
  
   return (
     <BrowserRouter>
+      <ScrollToTop /> 
       <Routes>
         <Route path='/' element={<HomePage />}></Route>
         <Route path='contact' element={<Contact />}></Route>
