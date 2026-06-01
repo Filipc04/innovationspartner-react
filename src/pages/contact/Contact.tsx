@@ -96,7 +96,7 @@ export const Contact = () => {
                       <input type="hidden" name="_replyto" value="bengtfille@gmail.com" />
 
                       <button type="submit" className="btn btn--primary contact-submit-btn" disabled={loading}>
-                        {loading ? "Skickar…" : "Skicka förfrågan →"}
+                        {loading ? "Skickar…" : "Skicka förfrågan"}
                       </button>
                     </form>
                   </>
@@ -130,7 +130,7 @@ export const Contact = () => {
                     <div>
                       <div className="contact-item-title">Adress</div>
                       <address className="contact-item-text">
-                        Uttervägen 8<br />246 52 Löddeköpinge
+                        <a href="https://maps.google.com/?q=Utterv%C3%A4gen+8,+246+52+L%C3%B6ddek%C3%B6pinge" target='_blank'>Uttervägen 8<br />246 52 Löddeköpinge</a>
                       </address>
                     </div>
                   </div>
